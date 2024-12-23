@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useState, useEffect } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import useInView from "@/app/components/common/useInView";
 import FallingDropsBg from "@/app/components/common/FallingDropsBg"
