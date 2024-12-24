@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 import { Oswald } from 'next/font/google';
 import CursorBubble from '@/app/components/common/CursorBubble'

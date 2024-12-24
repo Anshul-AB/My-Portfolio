@@ -12,7 +12,7 @@ export default function Contact() {
     phoneNumber: "",
     message: "",
   });
-  const [status, setStatus] = useState("");
+  // const [status, setStatus] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -21,7 +21,7 @@ export default function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setStatus("Sending...");
+    // setStatus("Sending...");
 
     try {
       const response = await fetch("/api/send-email", {
@@ -29,18 +29,17 @@ export default function Contact() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
-      
 
       const result = await response.json();
       if (result.success) {
-        setStatus("Email sent successfully!");
+        // setStatus("Email sent successfully!");
         setFormData({ name: "", email: "", phoneNumber: "", message: "" });
       } else {
-        setStatus("Failed to send email. Please try again later.");
+        // setStatus("Failed to send email. Please try again later.");
       }
     } catch (error) {
-      // console.error(error);
-      setStatus("An error occurred. Please try again.");
+      console.error(error);
+      // setStatus("An error occurred. Please try again.");
     }
   };
 
@@ -66,7 +65,7 @@ export default function Contact() {
       link: "mailto:anshul.b100@gmail.com",
     },
   ];
-  
+
   return (
     <div
       id="contact"
@@ -92,7 +91,7 @@ export default function Contact() {
           transition={{ duration: 1, delay: 0.2 }}
           ref={contactRef}
         >
-          Hiring for tech roles? Let's Talk!
+          Hiring for tech roles? Let&apos;s Talk!
         </motion.p>
 
         {/* Social Media Icons */}

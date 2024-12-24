@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import plugin from "tailwindcss/plugin";
 
 export default {
   content: [
@@ -32,8 +33,7 @@ export default {
     },
   },
   plugins: [
-    // Custom plugin for animation delay
-    function ({ addUtilities }) {
+    plugin(function ({ addUtilities }) {
       const newUtilities = {
         ".animation-delay-1s": { "animation-delay": "1s" },
         ".animation-delay-1\\.5s": { "animation-delay": "1.5s" },
@@ -43,7 +43,7 @@ export default {
         ".animation-delay-4s": { "animation-delay": "4s" },
         ".animation-delay-5s": { "animation-delay": "5s" },
       };
-      addUtilities(newUtilities, ["responsive", "hover"]);
-    },
+      addUtilities(newUtilities);
+    }),
   ],
 } satisfies Config;
