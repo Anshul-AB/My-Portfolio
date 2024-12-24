@@ -23,11 +23,16 @@ export default {
       },
       animation: {
         drop: "drop 15s cubic-bezier(0.4, 0.26, 0, 0.97) infinite",
+        "spin-slow": "spin-slow 8s linear infinite",
       },
       keyframes: {
         drop: {
           "0%": { top: "-15%" },
           "100%": { top: "110%" },
+        },
+        "spin-slow": {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
         },
       },
     },
