@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import useInView from "@/app/components/common/useInView";
 import { useState } from "react";
+import Heading from "@/app/components/common/Heading"
+
 
 export default function Contact() {
   const [contactRef, inView] = useInView();
@@ -69,19 +71,20 @@ export default function Contact() {
   return (
     <div
       id="contact"
-      className="relative flex justify-center h-screen bg-[#0A1828]"
+      className="relative flex justify-center h-screen bg-[#0A1828] px-10 md:px-20"
     >
       <div className="w-1/2">
         {/* Heading Animation */}
-        <motion.h1
-          className="text-[110px] text-center text-[#BFA181]"
+        <motion.div
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: inView ? 1 : 0, opacity: inView ? 1 : 0 }}
           transition={{ duration: 0.8 }}
           ref={contactRef}
         >
-          Contact Me
-        </motion.h1>
+         <Heading
+        title="Contact Me"
+      />
+        </motion.div>
 
         {/* Description */}
         <motion.p

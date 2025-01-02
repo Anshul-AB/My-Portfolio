@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import useInView from "@/app/components/common/useInView";
 import ProjectCard from "@/app/components/common/ProjectCard";
 import ProjectDetailCard from "@/app/components/common/ProjectDetailCard";
+import Heading from "@/app/components/common/Heading"
 
 export default function Home() {
   const [projectSectionRef, inView] = useInView();
@@ -50,7 +51,7 @@ export default function Home() {
 
   return (
     <div id="projects" className="px-20 bg-[#0A1828] h-screen">
-      <h1 className="text-[110px] text-center text-[#BFA181]">My Projects</h1>
+<Heading title={"My Projects"} />
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => (
           <motion.div

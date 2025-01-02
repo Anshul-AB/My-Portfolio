@@ -7,7 +7,7 @@ export default function MenuBar() {
   };
 
   return (
-    <div className="fixed top-36 right-0 text-[#e7cbae] border border-[#e7cbae] flex flex-col justify-center gap-8 py-3 z-50  m-4 p-3 rounded-md  shadow-[0_0_8px_#e7cbae] transition-all duration-300  hover:shadow-[0_0_10px_#e7cbae,0_0_15px_#e7cbae]">
+    <div className="fixed top-0 right-0 sm:top-36 sm:right-0 text-[#e7cbae] border border-[#e7cbae] flex sm:flex-col justify-center gap-8 py-3 z-50 m-4 p-3 rounded-md shadow-[0_0_8px_#e7cbae] transition-all duration-300  hover:shadow-[0_0_10px_#e7cbae,0_0_15px_#e7cbae]">
       {/* Home */}
       <div
         onClick={() => scrollToSection("home")}

@@ -50,7 +50,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="h-screen w-full flex justify-left bg-gradient-to-br from-[#0A1828] via-[#1E2A3D] to-black items-center bg-fixed relative px-20"
+      className="h-screen w-full flex justify-left bg-gradient-to-br from-[#0A1828] via-[#1E2A3D] to-black items-center bg-fixed relative px-10 md:px-20"
     >
       <FallingDropsBg />
 
@@ -63,7 +63,7 @@ const HeroSection = () => {
         transition={{ duration: 0.5, ease: "easeOut" }}
       >
         <motion.h2
-          className="text-lg md:text-2xl text-left text-[#e2d0bd] z-0"
+          className="text-base md:text-2xl text-left text-[#e2d0bd] z-0"
           initial={{ opacity: 0 }}
           animate={{ opacity: inView ? 1 : 0 }}
           transition={{ delay: 0.5, duration: 1 }}
@@ -72,7 +72,7 @@ const HeroSection = () => {
         </motion.h2>
 
         <motion.h1
-          className="text-4xl md:text-6xl lg:text-[110px] text-[#BFA181] text-left font-extralight"
+          className="text-5xl md:text-7xl lg:text-[110px] text-[#BFA181] text-left font-medium md:font-extralight"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 30 }}
           transition={{ delay: 1, duration: 1 }}
@@ -84,7 +84,7 @@ const HeroSection = () => {
         </motion.h1>
 
         <motion.h1
-          className="text-lg text-[#e2d0bd] text-left tracking-wider"
+          className="text-sm md:text-lg text-[#e2d0bd] w-[90%] lg:w-full text-left tracking-wider"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 30 }}
           transition={{ delay: 1.5, duration: 1 }}
@@ -94,7 +94,7 @@ const HeroSection = () => {
         </motion.h1>
 
         <motion.div
-          className="w-fit px-5 tracking-wider text-[#0A1828] bg-[#BFA181] font-black border border-[#e7cbae] py-3 rounded-md  shadow-[0_0_8px_#e7cbae] transition-all duration-300  hover:shadow-[0_0_5px_#e7cbae,0_0_10px_#e7cbae]"
+          className="w-fit px-5 text-xs md:text-base tracking-wider text-[#0A1828] bg-[#BFA181] font-black border border-[#e7cbae] py-3 rounded-md  shadow-[0_0_8px_#e7cbae] transition-all duration-300  hover:shadow-[0_0_5px_#e7cbae,0_0_10px_#e7cbae]"
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }}
           transition={{ delay: 2, duration: 0, ease: "easeInOut" }}

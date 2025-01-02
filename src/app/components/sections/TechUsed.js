@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import useInView from "@/app/components/common/useInView";
 import FallingDropsBg from "@/app/components/common/FallingDropsBg"
-
+import Heading from "@/app/components/common/Heading"
 
 // Tech stack data categorized
 const techCategories = {
@@ -43,8 +43,8 @@ const TechUsed = () => {
       className="min-h-screen bg-[#0A1828] text-white flex pb-16 px-20 flex-col items-center p-6"
     >
       <FallingDropsBg/>
-      <h1 className="text-[110px] text-[#BFA181] text-left w-full mb-10">Tech Stack</h1>
-      <div className="w-full flex flex-wrap justify-center gap-8">
+      <Heading title={"Tech Used"} classname={"text-left"} />
+            <div className="w-full flex flex-wrap justify-center gap-8">
         {Object.entries(techCategories).map(([category, techs], index) => (
           <div key={index} className="w-full max-w-sm">
             <h2 className="text-xl text-[#e2d0bd] font-semibold mb-4 border-b border-[#e2d0bd] pb-2 text-center">
