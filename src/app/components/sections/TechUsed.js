@@ -2,35 +2,36 @@
 import React from "react";
 import { motion } from "framer-motion";
 import useInView from "@/app/components/common/useInView";
-import FallingDropsBg from "@/app/components/common/FallingDropsBg"
-import Heading from "@/app/components/common/Heading"
+import FallingDropsBg from "@/app/components/common/FallingDropsBg";
+import Heading from "@/app/components/common/Heading";
 
-// Tech stack data categorized
+// Refined tech stack with important skills
 const techCategories = {
-  Frontend: [
+  "Web & App Development": [
     "React.js",
     "Next.js",
-    "Bootstrap 5",
     "Tailwind CSS",
-    "Sass",
-    "Ant Design",
-    "Framer Motion",
+    "Node.js",
+    "Express.js",
   ],
-  Backend: ["Node.js", "Express.js", "PHP", "Laravel"],
-  Database: ["MongoDB", "MySQL", "Redis"],
-  Authentication: ["Firebase", "OAuth", "JWT"],
-  Deployment: ["Docker", "Render", "Vercel"],
-  Tools: [
-    "Figma",
-    "Docker",
-    "Socket.IO",
-    "Rate Limiting",
-    "Aggregation Framework",
-    "MongoDB Compass/Atlas",
-    "Git",
-    "VS Code",
+  "Data & Machine Learning": [
+    "Python",
+    "Data Cleaning",
+    "Data Preprocessing",
+    "Model Prediction",
+    "Scikit-learn",
+    "Pandas",
+    "NumPy",
   ],
-  "State Management": ["Context API", "Redux Toolkit"],
+  "Deep Learning": [
+    "Perceptron",
+    "Artificial Neural Networks (ANN)",
+    "Convolutional Neural Networks (CNN)",
+    "TensorFlow",
+    "Keras",
+  ],
+  "Databases & Storage": ["MongoDB", "MySQL", "Redis"],
+  "Deployment & Collaboration": ["Docker", "Vercel", "Git", "DHCP"],
 };
 
 const TechUsed = () => {
@@ -42,9 +43,9 @@ const TechUsed = () => {
       ref={techSectionRef}
       className="min-h-screen bg-[#0A1828] text-white flex pb-16 px-20 flex-col items-center p-6"
     >
-      <FallingDropsBg/>
-      <Heading title={"Tech Used"} classname={"text-left"} />
-            <div className="w-full flex flex-wrap justify-center gap-8">
+      <FallingDropsBg />
+      <Heading title={"Skills & Tech Stack"} classname={"text-left"} />
+      <div className="w-full flex flex-wrap justify-center gap-8">
         {Object.entries(techCategories).map(([category, techs], index) => (
           <div key={index} className="w-full max-w-sm">
             <h2 className="text-xl text-[#e2d0bd] font-semibold mb-4 border-b border-[#e2d0bd] pb-2 text-center">
@@ -54,15 +55,15 @@ const TechUsed = () => {
               {techs.map((tech, idx) => (
                 <motion.div
                   key={idx}
-                  className="bg-[#fff3e5c3] fff3e5aa text-center text-[#0A1828] text-md tracking-widest font-bold p-2 rounded-lg shadow-lg w-[120px]"
+                  className="bg-[#fff3e5c3] text-center text-[#0A1828] text-md tracking-widest font-bold p-2 rounded-lg shadow-lg w-[140px]"
                   initial={{ scale: 0, opacity: 0 }}
                   animate={{
                     scale: inView ? 1 : 0,
                     opacity: inView ? 1 : 0,
                   }}
                   transition={{
-                    duration: 1,
-                    delay: idx * 0.2,
+                    duration: 0.8,
+                    delay: idx * 0.15,
                     ease: "easeInOut",
                   }}
                 >
