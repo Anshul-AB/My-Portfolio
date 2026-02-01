@@ -24,7 +24,7 @@ const AboutSection = () => {
   };
 
   return (
-    <div id="about" className="w-full h-screen relative bg-[#0A1828]">
+    <div id="about" className="w-full h-screen  bg-[#0A1828]">
 
       {/* Heading */}
       <div className="h-full flex flex-col sm:flex-row justify-center items-center space-x-5">
@@ -41,7 +41,19 @@ const AboutSection = () => {
       <AnimatePresence>
         {showAbout && (
           <motion.div
-            className="absolute top-0 transform -translate-x-1/2 -translate-y-1/2 m-0.5 p-6 bg-[#06101b] text-[#e3e2df] rounded-sm max-w-full h-full px:10 md:px-20"
+            className="  fixed
+  inset-0
+  m-auto
+  w-5/6
+  h-5/6
+  p-6
+  bg-[#06101b]
+  text-[#e3e2df]
+  rounded-sm
+  px-10
+  md:px-20
+  z-50"
+
             variants={slideInVariants}
             initial="hidden"
             animate="visible"
@@ -66,22 +78,16 @@ const AboutSection = () => {
                 </h2>
                 <br />
                 <p className="mt-2 text-xs sm:text-sm lg:text-lg text-justify text-[#e3e2df] tracking-wider ">
-                  I’m Anshul, a passionate Full-Stack MERN Developer with over 1
-                  year of experience building scalable and dynamic web
-                  applications. I specialize in the MERN stack (MongoDB,
-                  Express, React, Node.js) and love creating user-friendly
-                  interfaces using Tailwind CSS.
-                  {/* <br />
-                  <br /> */}
-                  {/* I’ve developed a habit-tracking app, Habitura, where I
-                  implemented real-time updates using Socket.IO, streak-based
-                  calculations with MongoDB Aggregation Pipelines, and ensured
-                  smooth deployments on Render. I’m also exploring AWS to master
-                  cloud hosting and enhance my deployment skills. */}
-                  <br /> <br /> I’m passionate about solving real-world problems
-                  through clean, efficient code. Outside of coding, I love
-                  exploring productivity hacks and learning new technologies to
-                  stay ahead in the game.
+                  I’m Anshul, a Full-Stack MERN Developer with 1+ year of experience building
+responsive, user-friendly web applications. I work with React, Redux Toolkit,
+Next.js, and REST APIs to turn designs into fast, scalable, and maintainable
+products.
+<br/><br/>
+
+I focus on clean UI, smooth user experience, and writing code that’s easy to
+extend as your product grows. If you’re looking for someone who cares about both
+functionality and polish.
+
                   <br /> <br /> Let’s build something impactful together! 😊
                 </p>
               </div>

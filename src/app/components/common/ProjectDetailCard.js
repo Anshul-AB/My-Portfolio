@@ -21,8 +21,11 @@ const ProjectDetailCard = ({
       animate={{ y: 0 }}
       exit={{ y: "100%" }}
       transition={{ type: "spring", stiffness: 100, damping: 15 }}
-      className="fixed bottom-0 left-0 w-full h-screen bg-[#06101b] z-50 overflow-hidden shadow-lg"
+      className="fixed inset-0 z-50 bg-black/60 flex items-center justify-center"
     >
+  <div className="w-5/6 h-5/6 bg-[#06101b] overflow-y-auto shadow-lg rounded-2xl">
+    {/* modal content */}
+
       {/* Close Button */}
       <button
         onClick={onClose}
@@ -105,6 +108,8 @@ const ProjectDetailCard = ({
           )}
         </div>
       </div>
+        </div>
+
     </motion.div>
   );
 };

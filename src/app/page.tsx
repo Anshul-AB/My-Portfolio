@@ -5,6 +5,8 @@ import TechUsed from "@/app/components/sections/TechUsed";
 import Projects from "@/app/components/sections/Projects";
 import Contact from "@/app/components/sections/Contact";
 
+
+
 export default function Home() {
 
   return (

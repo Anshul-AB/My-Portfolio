@@ -14,24 +14,24 @@ const techCategories = {
     "Node.js",
     "Express.js",
   ],
-  "Data & Machine Learning": [
-    "Python",
-    "Data Cleaning",
-    "Data Preprocessing",
-    "Model Prediction",
-    "Scikit-learn",
-    "Pandas",
-    "NumPy",
-  ],
-  "Deep Learning": [
-    "Perceptron",
-    "Artificial Neural Networks (ANN)",
-    "Convolutional Neural Networks (CNN)",
-    "TensorFlow",
-    "Keras",
-  ],
-  "Databases & Storage": ["MongoDB", "MySQL", "Redis"],
-  "Deployment & Collaboration": ["Docker", "Vercel", "Git", "DHCP"],
+  // "Data & Machine Learning": [
+  //   "Python",
+  //   "Data Cleaning",
+  //   "Data Preprocessing",
+  //   "Model Prediction",
+  //   "Scikit-learn",
+  //   "Pandas",
+  //   "NumPy",
+  // ],
+  // "Deep Learning": [
+  //   "Perceptron",
+  //   "Artificial Neural Networks (ANN)",
+  //   "Convolutional Neural Networks (CNN)",
+  //   "TensorFlow",
+  //   "Keras",
+  // ],
+  "Databases & Storage": ["MongoDB", "MySQL", "Redis", "Firebase"],
+  "Deployment & Collaboration": ["Docker", "Vercel", "Git", "Render"],
 };
 
 const TechUsed = () => {
