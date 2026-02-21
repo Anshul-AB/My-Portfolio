@@ -93,7 +93,9 @@ export default function Home() {
       dockerLink: "https://hub.docker.com/r/anshul100/vibing-music-app",
     },
   ];
-const settings = {
+
+  const settings = {
+  mobileFirst: true,
   dots: true,
   infinite: true,
   speed: 800,
@@ -101,21 +103,14 @@ const settings = {
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 2000,
-
   responsive: [
     {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-      },
+      breakpoint: 768,
+      settings: { slidesToShow: 1 },
     },
     {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
+      breakpoint: 1024,
+      settings: { slidesToShow: 2 },
     },
   ],
 };
