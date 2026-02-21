@@ -11,7 +11,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 
 export default function Home() {
-  const [projectSectionRef, inView] = useInView();
+  // const [projectSectionRef, inView] = useInView();
   const [showDetails, setShowDetails] = useState(false);
   const [currentProject, setCurrentProject] = useState(null);
 
