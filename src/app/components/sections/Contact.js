@@ -71,9 +71,9 @@ export default function Contact() {
   return (
     <div
       id="contact"
-      className="relative flex justify-center h-screen pb-20 bg-[#0A1828] px-10 md:px-20"
+      className="relative flex justify-center pb-20 bg-[#0A1828] md:px-20"
     >
-      <div className="w-1/2">
+      <div className="">
         {/* Heading Animation */}
         <motion.div
           initial={{ y: -50, opacity: 0 }}
@@ -138,7 +138,7 @@ export default function Contact() {
               Send A Message
             </h1>
             <div className="space-y-3 w-full">
-              <div className="flex flex-col xl:flex-row xl:space-x-3 sm:flex-row sm:space-x-3 w-full">
+              <div className="flex flex-col space-y-2 sm:space-y-0 xl:flex-row xl:space-x-3 sm:flex-row sm:space-x-3 w-full">
                 <input
                   type="text"
                   name="name"

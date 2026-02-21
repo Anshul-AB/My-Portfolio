@@ -93,59 +93,67 @@ export default function Home() {
       dockerLink: "https://hub.docker.com/r/anshul100/vibing-music-app",
     },
   ];
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 800,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 800,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
       },
-    ],
-  };
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+};
 
 
   return (
     <div id="projects" className="px-20 bg-[#0A1828] h-screen">
 <Heading title={"My Projects"} />
-      <Slider {...settings} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
+      <Slider {...settings}>
   {projects.map((project, index) => (
-    <motion.div
-      key={project.id}
-      className="max-w-sm rounded-xl overflow-hidden shadow-lg bg-[#fff3e5c3] cursor-pointer"
-      onClick={() => {
-        setCurrentProject(project);
-        setShowDetails(true);
-      }}
-      initial={{ opacity: 0, y: 40, scale: 0.95 }}
-      whileInView={{ opacity: 1, y: 0, scale: 1 }}
-      viewport={{ once: true, amount: 0.2 }}
-      transition={{
-        duration: 0.6,
-        delay: index * 0.15,
-        ease: "easeOut",
-      }}
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.97 }}
-    >
-      <ProjectCard
-        title={project.title}
-        description={project.description}
-        imageUrl={project.images}
-        githubLink={project.githubLink}
-        websiteLink={project.websiteLink}
-        dockerLink={project.dockerLink}
-      />
-    </motion.div>
+    <div key={project.id} className="px-4">
+      <motion.div
+        className="max-w-sm rounded-xl overflow-hidden shadow-lg bg-[#fff3e5c3] cursor-pointer"
+        onClick={() => {
+          setCurrentProject(project);
+          setShowDetails(true);
+        }}
+        initial={{ opacity: 0, y: 40, scale: 0.95 }}
+        whileInView={{ opacity: 1, y: 0, scale: 1 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{
+          duration: 0.6,
+          delay: index * 0.15,
+          ease: "easeOut",
+        }}
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.97 }}
+      >
+        <ProjectCard
+          title={project.title}
+          description={project.description}
+          imageUrl={project.images}
+          githubLink={project.githubLink}
+          websiteLink={project.websiteLink}
+          dockerLink={project.dockerLink}
+        />
+      </motion.div>
+    </div>
   ))}
 </Slider>
 
