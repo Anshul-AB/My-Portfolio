@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import useInView from "@/app/components/common/useInView";
+// import useInView from "@/app/components/common/useInView";
 import ProjectCard from "@/app/components/common/ProjectCard";
 import ProjectDetailCard from "@/app/components/common/ProjectDetailCard";
 import Heading from "@/app/components/common/Heading"
