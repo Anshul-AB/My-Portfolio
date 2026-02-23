@@ -1,8 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import  Link  from "next/link";
 import { RxCross1 } from "react-icons/rx";
-import { FaGithub, FaDocker, FaGlobe } from "react-icons/fa";
 
 const ProjectDetailCard = ({
   title,

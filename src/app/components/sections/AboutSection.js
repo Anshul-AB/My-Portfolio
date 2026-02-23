@@ -27,11 +27,11 @@ const AboutSection = () => {
     <div id="about" className="w-full h-screen  bg-[#0A1828]">
 
       {/* Heading */}
-      <div className="h-full flex flex-col sm:flex-row justify-center items-center space-x-5">
+      <div className="h-full flex flex-col sm:flex-row justify-center items-center space-x-5" onClick={() => setShowAbout(!showAbout)}>
         <h1 className="text-[100px] md:text-[120px] lg:text-[150px] text-[#BFA181] font-black ">About Me</h1>
         <div
-          className="border-2 border-[#BFA181] p-3 rounded-full hover:scale-95 transition-all duration-300 text-[#BFA181]   text-[40px]  md:text-[60px] lg:text-[80px] font-extralight cursor-pointer"
-          onClick={() => setShowAbout(!showAbout)}
+          className="border-2 border-[#BFA181] p-3 rounded-full animate-pulse hover:scale-95 transition-all duration-300 text-[#BFA181]   text-[40px]  md:text-[60px] lg:text-[80px] font-extralight cursor-pointer"
+          
         >
           <TfiPlus />
         </div>
@@ -45,7 +45,8 @@ const AboutSection = () => {
   inset-0
   m-auto
   w-5/6
-  h-5/6
+  md:h-5/6
+  h-full
   p-6
   bg-[#06101b]
   text-[#e3e2df]
@@ -60,10 +61,10 @@ const AboutSection = () => {
             exit="exit"
           >
             {/* close content button */}
-            <div className="flex justify-center items-center space-x-3  mb-7">
+            <div className="flex justify-center items-center space-x-3  mb-7 ">
               <h1 className="text-3xl text-[#e3e2df] ">About Me</h1>
               <div
-                className="border-2 border-[#e3e2df] p-3 rounded-full w-fit text-[#e3e2df] text-lg font-extralight hover:scale-95 transition-all duration-300"
+                className="border-2 border-[#e3e2df] p-3 rounded-full w-fit animate-pulse text-[#e3e2df] text-lg font-extralight hover:scale-95 transition-all duration-300"
                 onClick={() => setShowAbout((prev) => !prev)}
               >
                 <TfiMinus />
