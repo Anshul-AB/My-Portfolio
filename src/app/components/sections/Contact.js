@@ -71,7 +71,7 @@ export default function Contact() {
   return (
     <div
       id="contact"
-      className="relative flex justify-center pb-20 bg-[#0A1828] md:px-20"
+      className="relative flex justify-center items-center min-h-screen pb-20 bg-[#0A1828] md:px-20"
     >
       <div className="">
         {/* Heading Animation */}
