@@ -8,9 +8,6 @@ const ProjectDetailCard = ({
   techStack,
   features,
   impact,
-  githubLink,
-  websiteLink,
-  dockerLink,
   onClose,
 }) => {
   return (
