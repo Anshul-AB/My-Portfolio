@@ -96,7 +96,7 @@ export default function Home() {
 
 
   return (
-    <div id="projects" className="px-20 bg-[#0A1828] min-h-screen">
+    <div id="projects" className="px-10 md:px-20 bg-[#0A1828] min-h-screen">
     <Heading title={"My Projects"} />
     <div className="flex flex-col gap-6 md:grid md:grid-cols-2 lg:grid-cols-3">
       {projects.map((project, index) => (

@@ -74,39 +74,6 @@ const ProjectDetailCard = ({
           <p className="text-lg text-[#ddd] text-wider">{impact}</p>
         </div>
 
-        {/* Links */}
-        <div className="flex justify-end flex-wrap gap-6 mt-4">
-          {githubLink && (
-            <Link
-              href={githubLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#BFA181] text-3xl  hover:text-[#cfc0af]"
-            >
-              <FaGithub/>
-            </Link>
-          )}
-          {websiteLink && (
-            <Link
-              href={websiteLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#BFA181] text-3xl  hover:text-[#cfc0af] underline"
-            >
-              <FaGlobe/>
-            </Link>
-          )}
-          {dockerLink && (
-            <Link
-              href={dockerLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#BFA181] text-3xl  hover:text-[#cfc0af] underline"
-            >
-              <FaDocker/>
-            </Link>
-          )}
-        </div>
       </div>
         </div>
 

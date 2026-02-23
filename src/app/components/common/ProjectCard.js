@@ -22,40 +22,56 @@ const ProjectCard = ({
       </div>
 
       {/* links */}
-      <div className="absolute bottom-0 right-0 px-6 py-4 flex space-x-4">
-        {/* GitHub Icon */}
-        <Link
-          href={githubLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          title="Github  link"
-          className="text-[#0A1828] hover:text-[#178582] transition-colors"
-        >
-          <FaGithub size={24} />
-        </Link>
+     <div className="absolute bottom-0 right-0 px-6 py-4 flex space-x-4">
 
-        {/* Website (Globe) Icon */}
-        <Link
-          href={websiteLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          title="Website URL"
-          className="text-[#0A1828] hover:text-[#178582] transition-colors"
-        >
-          <FaGlobe size={24} />
-        </Link>
+  {/* GitHub */}
+  <Link
+    href={githubLink}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="group relative text-[#0A1828] transition-all duration-300 hover:text-[#178582] hover:scale-125"
+  >
+    <FaGithub size={24} className="animate-pulse group-hover:animate-none" />
+    <span className="absolute -top-8 left-1/2 -translate-x-1/2 
+      opacity-0 group-hover:opacity-100 text-xs bg-black text-white 
+      px-2 py-1 rounded transition">
+      Code
+    </span>
+  </Link>
 
-        {/* Docker Icon */}
-        {dockerLink && <Link
-          href={dockerLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          title="Dockerhub Link"
-          className="text-[#0A1828] hover:text-[#178582] transition-colors"
-        >
-          <FaDocker size={24} />
-        </Link>}
-      </div>
+  {/* Live Website */}
+  <Link
+    href={websiteLink}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="group relative text-[#0A1828] transition-all duration-300 hover:text-[#178582] hover:scale-125"
+  >
+    <FaGlobe size={24} className="animate-pulse" />
+    <span className="absolute -top-8 left-1/2 -translate-x-1/2 
+      opacity-0 group-hover:opacity-100 text-xs bg-black text-white 
+      px-2 py-1 rounded transition">
+      Live Demo
+    </span>
+  </Link>
+
+  {/* Docker */}
+  {dockerLink && (
+    <Link
+      href={dockerLink}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group relative text-[#0A1828] transition-all duration-300 hover:text-[#178582] hover:scale-125"
+    >
+      <FaDocker size={24} className="animate-pulse" />
+      <span className="absolute -top-8 left-1/2 -translate-x-1/2 
+        opacity-0 group-hover:opacity-100 text-xs bg-black text-white 
+        px-2 py-1 rounded transition">
+        Docker
+      </span>
+    </Link>
+  )}
+
+</div>
     </div>
   );
 };
