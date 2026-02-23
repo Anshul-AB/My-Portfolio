@@ -94,63 +94,42 @@ export default function Home() {
     },
   ];
 
-  const settings = {
-  mobileFirst: true,
-  dots: true,
-  infinite: true,
-  speed: 800,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2000,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: { slidesToShow: 1 },
-    },
-    {
-      breakpoint: 1024,
-      settings: { slidesToShow: 2 },
-    },
-  ],
-};
-
 
   return (
     <div id="projects" className="px-20 bg-[#0A1828] min-h-screen">
-<Heading title={"My Projects"} />
+    <Heading title={"My Projects"} />
     <div className="flex flex-col gap-6 md:grid md:grid-cols-2 lg:grid-cols-3">
-  {projects.map((project, index) => (
-    <div key={project.id} className="px-2">
-      <motion.div
-        className="rounded-xl overflow-hidden shadow-lg bg-[#fff3e5c3] cursor-pointer"
-        onClick={() => {
-          setCurrentProject(project);
-          setShowDetails(true);
-        }}
-        initial={{ opacity: 0, y: 40, scale: 0.95 }}
-        whileInView={{ opacity: 1, y: 0, scale: 1 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{
-          duration: 0.6,
-          delay: index * 0.1,
-          ease: "easeOut",
-        }}
-        whileHover={{ scale: 1.03 }}
-        whileTap={{ scale: 0.97 }}
-      >
-        <ProjectCard
-          title={project.title}
-          description={project.description}
-          imageUrl={project.images}
-          githubLink={project.githubLink}
-          websiteLink={project.websiteLink}
-          dockerLink={project.dockerLink}
-        />
-      </motion.div>
+      {projects.map((project, index) => (
+        <div key={project.id} className="px-2">
+          <motion.div
+            className="rounded-xl overflow-hidden shadow-lg bg-[#fff3e5c3] cursor-pointer"
+            onClick={() => {
+              setCurrentProject(project);
+              setShowDetails(true);
+            }}
+            initial={{ opacity: 0, y: 40, scale: 0.95 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{
+              duration: 0.6,
+              delay: index * 0.1,
+              ease: "easeOut",
+            }}
+            whileHover={{ scale: 1.03 }}
+            whileTap={{ scale: 0.97 }}
+          >
+            <ProjectCard
+              title={project.title}
+              description={project.description}
+              imageUrl={project.images}
+              githubLink={project.githubLink}
+              websiteLink={project.websiteLink}
+              dockerLink={project.dockerLink}
+            />
+          </motion.div>
+        </div>
+      ))}
     </div>
-  ))}
-</div>
 
 
       {/* Project Details Modal */}
