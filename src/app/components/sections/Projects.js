@@ -19,6 +19,31 @@ export default function Home() {
   // Project Data
   const projects = [
     {
+  id: "smart-job-hunter",
+  title: "Smart Job Hunter AI",
+  description:
+    "AI-powered job matching platform that analyzes resumes and compares them with real-time job listings to provide match insights.",
+  
+  techStack:
+    "MERN Stack, External Job APIs, Tailwind CSS, JWT Auth, REST APIs",
+
+  images: "/smart_job_hunter_ai.png",
+
+  features: [
+    "AI-based job matching using resume skill extraction.",
+    "Real-time job fetching via external APIs.",
+    "Bookmark/save jobs with persistent user state.",
+    "Match score analysis with missing & matched skills.",
+    "Infinite scrolling for seamless job exploration."
+  ],
+
+  impact:
+    "Improved job discovery experience with personalized match insights, optimized API-driven data flow, and responsive UI for better engagement.",
+
+  githubLink: "https://github.com/Anshul-AB/smart-job-hunter-ai",
+  websiteLink: "https://smart-job-hunter-ai.vercel.app"
+},
+    {
       id:"habitura",
       title: "Habitura - Habit Tracking App",
       description:

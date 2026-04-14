@@ -99,7 +99,7 @@ const HeroSection = () => {
           animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }}
           transition={{ delay: 2, duration: 0, ease: "easeInOut" }}
         >
-          <a href="/Anshul-Resume.pdf" download>
+          <a href="/Anshul Resume.pdf" download>
             DOWNLOAD RESUME
           </a>
         </motion.div>
