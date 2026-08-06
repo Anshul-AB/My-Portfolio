@@ -66,7 +66,7 @@ const TechUsed = () => {
     >
       <FallingDropsBg />
 
-      <Heading title={"Technologies I Work With ..."} classname={"text-left"} />
+      <Heading title={"Technologies I Work With ..."} classname={"text-left md:text-[40px]"} />
 
       <div className="w-full flex flex-wrap justify-center gap-8 relative z-10">
         {Object.entries(techCategories).map(([category, techs], index) => (
