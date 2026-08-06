@@ -78,16 +78,26 @@ const AboutSection = () => {
                   I ❤️ to build things
                 </h2>
                 <br />
-                <p className="mt-2 text-xs sm:text-sm lg:text-lg text-justify text-[#e3e2df] tracking-wider">
-  Hi, I&apos;m <span className="font-semibold">Anshul</span> — a <span className="font-semibold">React Native and MERN Stack Developer</span> with hands-on experience building and maintaining production mobile applications. During my internship at Konvo, I worked on a live React Native application, implementing features, integrating APIs, fixing production issues, and collaborating with the engineering team using modern development workflows.
+               <p className="mt-2 text-xs sm:text-sm lg:text-lg text-justify text-[#e3e2df] tracking-wider">
+  Hi, I&apos;m <span className="font-semibold">Anshul</span> — a{" "}
+  <span className="font-semibold">React Native and MERN Stack Developer</span>{" "}
+  with hands-on experience building and maintaining production mobile applications.
+  During my internship at Konvo, I worked on a live React Native application,
+  implementing features, integrating APIs, fixing production issues, and
+  collaborating with the engineering team using modern development workflows.
 
-  <br /><br />
+  <br />
+  <br />
 
-  Alongside my professional experience, I enjoy building full-stack applications using the MERN stack, focusing on clean architecture, responsive user interfaces, and scalable backend solutions. I'm passionate about creating products that are both functional and intuitive.
+  Alongside my professional experience, I enjoy building full-stack applications
+  using the MERN stack, focusing on clean architecture, responsive user
+  interfaces, and scalable backend solutions. I&apos;m passionate about creating
+  products that are both functional and intuitive.
 
-  <br /><br />
+  <br />
+  <br />
 
- Let&apos;s build something impactful together! 😊
+  Let&apos;s build something impactful together! 😊
 </p>
               </div>
 
