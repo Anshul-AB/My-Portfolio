@@ -79,7 +79,7 @@ const AboutSection = () => {
                 </h2>
                 <br />
                 <p className="mt-2 text-xs sm:text-sm lg:text-lg text-justify text-[#e3e2df] tracking-wider">
-  Hi, I'm <span className="font-semibold">Anshul</span> — a <span className="font-semibold">React Native and MERN Stack Developer</span> with hands-on experience building and maintaining production mobile applications. During my internship at Konvo, I worked on a live React Native application, implementing features, integrating APIs, fixing production issues, and collaborating with the engineering team using modern development workflows.
+  Hi, I&apos;m <span className="font-semibold">Anshul</span> — a <span className="font-semibold">React Native and MERN Stack Developer</span> with hands-on experience building and maintaining production mobile applications. During my internship at Konvo, I worked on a live React Native application, implementing features, integrating APIs, fixing production issues, and collaborating with the engineering team using modern development workflows.
 
   <br /><br />
 
@@ -87,7 +87,7 @@ const AboutSection = () => {
 
   <br /><br />
 
-  Let's build something impactful together! 😊
+ Let&apos;s build something impactful together! 😊
 </p>
               </div>
 
