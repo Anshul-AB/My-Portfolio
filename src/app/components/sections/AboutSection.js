@@ -45,7 +45,7 @@ const AboutSection = () => {
   inset-0
   m-auto
   w-5/6
-  md:h-5/6
+  md:min-h-5/6
   h-full
   p-6
   bg-[#06101b]
