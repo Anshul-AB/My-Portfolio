@@ -78,19 +78,17 @@ const AboutSection = () => {
                   I ❤️ to build things
                 </h2>
                 <br />
-                <p className="mt-2 text-xs sm:text-sm lg:text-lg text-justify text-[#e3e2df] tracking-wider ">
-                  I’m Anshul, a Full-Stack MERN Developer with 1+ year of experience building
-responsive, user-friendly web applications. I work with React, Redux Toolkit,
-Next.js, and REST APIs to turn designs into fast, scalable, and maintainable
-products.
-<br/><br/>
+                <p className="mt-2 text-xs sm:text-sm lg:text-lg text-justify text-[#e3e2df] tracking-wider">
+  Hi, I'm <span className="font-semibold">Anshul</span> — a <span className="font-semibold">React Native and MERN Stack Developer</span> with hands-on experience building and maintaining production mobile applications. During my internship at Konvo, I worked on a live React Native application, implementing features, integrating APIs, fixing production issues, and collaborating with the engineering team using modern development workflows. :contentReference[oaicite:0]{index=0}
 
-I focus on clean UI, smooth user experience, and writing code that’s easy to
-extend as your product grows. If you’re looking for someone who cares about both
-functionality and polish.
+  <br /><br />
 
-                  <br /> <br /> Let’s build something impactful together! 😊
-                </p>
+  Alongside my professional experience, I enjoy building full-stack applications using the MERN stack, focusing on clean architecture, responsive user interfaces, and scalable backend solutions. I'm passionate about creating products that are both functional and intuitive.
+
+  <br /><br />
+
+  Let's build something impactful together! 😊
+</p>
               </div>
 
               {/* Image on the left*/}

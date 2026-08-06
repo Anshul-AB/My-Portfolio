@@ -8,9 +8,9 @@ const HeroSection = () => {
   const [homeRef, inView] = useInView();
 
   const titles = [
-    "Full Stack Developer",
+    // "Full Stack Developer",
     "MERN Stack Developer",
-    "React Developer",
+    "React Native Developer",
   ];
   const [currentText, setCurrentText] = useState("");
   const [titleIndex, setTitleIndex] = useState(0);

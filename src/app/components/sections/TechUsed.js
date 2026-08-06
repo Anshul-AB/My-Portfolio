@@ -7,31 +7,49 @@ import Heading from "@/app/components/common/Heading";
 
 // Refined tech stack with important skills
 const techCategories = {
-  "Web & App Development": [
+  "Mobile Development": [
+    "React Native",
+    "Expo",
+    "TypeScript",
+    "Redux Toolkit",
+    "Redux Saga",
+  ],
+
+  "Frontend Development": [
     "React.js",
     "Next.js",
     "Tailwind CSS",
+    "JavaScript",
+    "HTML5",
+    "CSS3",
+  ],
+
+  "Backend Development": [
     "Node.js",
     "Express.js",
+    "REST APIs",
+    "JWT",
   ],
-  // "Data & Machine Learning": [
-  //   "Python",
-  //   "Data Cleaning",
-  //   "Data Preprocessing",
-  //   "Model Prediction",
-  //   "Scikit-learn",
-  //   "Pandas",
-  //   "NumPy",
-  // ],
-  // "Deep Learning": [
-  //   "Perceptron",
-  //   "Artificial Neural Networks (ANN)",
-  //   "Convolutional Neural Networks (CNN)",
-  //   "TensorFlow",
-  //   "Keras",
-  // ],
-  "Databases & Storage": ["MongoDB", "MySQL", "Redis", "Firebase"],
-  "Deployment & Collaboration": ["Docker", "Vercel", "Git", "Render"],
+
+  "Databases": [
+    "MongoDB",
+    "Firebase",
+    "Redis",
+  ],
+
+  "Tools & Integrations": [
+    "Git",
+    "Docker",
+    "Firebase",
+    "Agora SDK",
+    "Notifee",
+    "Mixpanel",
+  ],
+
+  "Deployment": [
+    "Vercel",
+    "Render",
+  ],
 };
 
 const TechUsed = () => {
@@ -48,7 +66,7 @@ const TechUsed = () => {
     >
       <FallingDropsBg />
 
-      <Heading title={"Skills & Tech Stack"} classname={"text-left"} />
+      <Heading title={"Technologies I Work With ..."} classname={"text-left"} />
 
       <div className="w-full flex flex-wrap justify-center gap-8 relative z-10">
         {Object.entries(techCategories).map(([category, techs], index) => (
